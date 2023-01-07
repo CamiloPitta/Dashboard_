@@ -2,6 +2,7 @@ import React from 'react';
 import foto from '../assets/images/jordan-walke.png';
 
 function TopBar(){
+	
     return(
         <React.Fragment>
 				{/*<!-- Topbar -->*/}

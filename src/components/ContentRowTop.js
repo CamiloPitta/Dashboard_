@@ -1,6 +1,6 @@
 import React from 'react';
 import imagenFondo from '../assets/images/mandalorian.jpg'
-import test from './test'
+import Test from './Test'
 function ContentRowTop(){
     return(
         <React.Fragment>
@@ -8,7 +8,7 @@ function ContentRowTop(){
 				{/*<!-- Content Row Top -->*/}
 				<div className="container-fluid">
 					<div className="d-sm-flex aligns-items-center justify-content-between mb-4">
-						<test />
+						
 						<h1 className="h3 mb-0 text-gray-800">App Dashboard</h1>
 					</div>
 				
@@ -22,7 +22,7 @@ function ContentRowTop(){
 									<div className="row no-gutters align-items-center">
 										<div className="col mr-2">
 											<div className="text-xs font-weight-bold text-primary text-uppercase mb-1">Movies in Data Base</div>
-											<div className="h5 mb-0 font-weight-bold text-gray-800">21</div>
+											<div className="h5 mb-0 font-weight-bold text-gray-800"><Test />21</div>
 										</div>
 										<div className="col-auto">
 											<i className="fas fa-film fa-2x text-gray-300"></i>

@@ -6,20 +6,34 @@ class test extends Component {
     constructor (props) {
         super (props)
         this.state = {
-            test: <p> rrrr </p>
+            test: 'rrrr',
+            api: 'p'
         }
     }
-    componentDidMount(){
 
-    }
-    componentDidUpdate(){
-
+    apiCall (url, consecuencia){
+        fetch(url)
+        .then(response => response.json())
+        .then(data => consecuencia(data))
+        .catch(error => console.log(error))
     }
     
+    componentDidMount(){
+        this.apiCall('https://restcountries.com/v3.1/currency/pen', this.mostrarInfo)
+    
+    }
+
+    mostrarInfo = (data) => {
+        console.log('holi')
+        this.setState({
+            // api: {data.name.common}
+        })
+    }
+
     render() {
         return (
             <div>
-                <h1> {this.state.test} </h1>
+                <h1> {this.state.api} </h1>
                 
                 
             </div>
