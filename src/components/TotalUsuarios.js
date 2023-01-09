@@ -1,44 +1,42 @@
 import React, {Component} from 'react'
 // import PropTypes from 'prop-types'
 
-class test extends Component {
+class TotalUsuarios extends Component {
 
     constructor (props) {
         super (props)
         this.state = {
-            test: 'rrrr',
+            test: 'test'
         
         }
     }
 
     apiCall (url, consecuencia){
-        fetch(url,{
-            'mode': 'cors',
-            'headers': {'Access-Control-Allow-Origin': '*'}
-        })
+        fetch(url)
         .then(response => response.json())
         .then(data => consecuencia(data))
         .catch(error => console.log(error))
     }
     
     componentDidMount(){
-        this.apiCall('https://restcountries.com/v3.1/currency/pen', this.mostrarInfo)
+        this.apiCall('http://hosteria-dh.onrender.com/API/totalusuarios', this.mostrarInfo)
 
-        // this.apiCall('http://localhost:3001/API/actividad/5', this.mostrarInfo)
+        // this.apiCall('https://pokeapi.co/api/v2/pokemon/ditto', this.mostrarInfo)
 
-       
+        // this.apiCall('http://localhost:3001/API/totalusuarios', this.mostrarInfo)
+
+        // this.apiCall('https://restcountries.com/v3.1/currency/pen', this.mostrarInfo)
     
     }
 
     mostrarInfo = (data) => {
-        let m = data[0].name.common
-        console.log(data)
-        let s = ['a', 's', 'd', 'f']
+        let m = data.total
+        // console.log(data)
         this.setState({
             // api: 'p'
             
-            api: s.map((item, i) => <li key = {i + item}>{item}</li>)
-            // api: data
+            // api: s.map((item, i) => <li key = {i + item}>{item}</li>)
+            api: m
         })
     }
 
@@ -58,4 +56,4 @@ class test extends Component {
 
 }
 
-export default test
+export default TotalUsuarios

@@ -1,5 +1,5 @@
 import React from 'react';
-import SideBar from './SideBar';
+// import SideBar from './SideBar';
 import ContentWrapper from './ContentWrapper';
 
 function App() {
@@ -7,8 +7,7 @@ function App() {
     
     <React.Fragment>
       	<div id="wrapper">
-      
-          <SideBar />
+          {/* <SideBar /> */}
           <ContentWrapper />
         </div>
     </React.Fragment>
