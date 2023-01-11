@@ -35,7 +35,7 @@ function ContentRowTop(){
 											<div className="h5 mb-0 font-weight-bold text-gray-800"><TotalUsuarios /></div>
 										</div>
 										<div className="col-auto">
-											<i className="fas fa-film fa-2x text-gray-300"></i>
+											{/* <i className="fas fa-film fa-2x text-gray-300"></i>#4e73df */}
 										</div>
 									</div>
 								</div>
@@ -52,7 +52,7 @@ function ContentRowTop(){
 											<div className="h5 mb-0 font-weight-bold text-gray-800"><TotalProductos /></div>
 										</div>
 										<div className="col-auto">
-											<i className="fas fa-award fa-2x text-gray-300"></i>
+											{/* <i className="fas fa-award fa-2x text-gray-300"></i> */}
 										</div>
 									</div>
 								</div>
@@ -70,7 +70,7 @@ function ContentRowTop(){
 											<div className="h5 mb-0 font-weight-bold text-gray-800"><TotalCategorias /></div>
 										</div>
 										<div className="col-auto">
-											<i className="fas fa-user fa-2x text-gray-300"></i>
+											{/* <i className="fas fa-user fa-2x text-gray-300"></i> */}
 										</div>
 									</div>
 								</div>
@@ -100,91 +100,8 @@ function ContentRowTop(){
 						</div>
 						{/*<!-- End content row last movie in Data Base -->*/}
 
-						{/*<!-- Genres in DB -->*/}
-						<div className="col-lg-6 mb-4">						
-							<div className="card shadow mb-4">
-								<div className="card-header py-3">
-									<h5 className="m-0 font-weight-bold text-gray-800">Categorías actividades</h5>
-								</div>
-								<div className="card-body">
-									<div className="row">
-										<div className="col-lg-6 mb-4">
-											<div className="card bg-dark text-white shadow">
-												<div className="card-body">
-													<Categorias />
-												</div>
-											</div>
-										</div>
-										{/* <div className="col-lg-6 mb-4">
-											<div className="card bg-dark text-white shadow">
-												<div className="card-body">
-													Animación
-												</div>
-											</div>
-										</div>
-										<div className="col-lg-6 mb-4">
-											<div className="card bg-dark text-white shadow">
-												<div className="card-body">
-													Aventura
-												</div>
-											</div>
-										</div>
-										<div className="col-lg-6 mb-4">
-											<div className="card bg-dark text-white shadow">
-												<div className="card-body">
-													Ciencia Ficción
-												</div>
-											</div>
-										</div>
-										<div className="col-lg-6 mb-4">
-											<div className="card bg-dark text-white shadow">
-												<div className="card-body">
-													Comedia
-												</div>
-											</div>
-										</div>
-										<div className="col-lg-6 mb-4">
-											<div className="card bg-dark text-white shadow">
-												<div className="card-body">
-													Documental
-												</div>
-											</div>
-										</div>
-										<div className="col-lg-6 mb-4">
-											<div className="card bg-dark text-white shadow">
-												<div className="card-body">
-													Drama
-												</div>
-											</div>
-										</div>
-										<div className="col-lg-6 mb-4">
-											<div className="card bg-dark text-white shadow">
-												<div className="card-body">
-													Fantasia
-												</div>
-											</div>
-										</div>
-										<div className="col-lg-6 mb-4">
-											<div className="card bg-dark text-white shadow">
-												<div className="card-body">
-													Infantiles
-												</div>
-											</div>
-										</div>
-										<div className="col-lg-6 mb-4">
-											<div className="card bg-dark text-white shadow">
-												<div className="card-body">
-													Musical
-												</div>
-											</div>
-										</div> */}
-
-									</div>
-								</div>
-							</div>
-						</div>
-												{/*<!-- Last Movie in DB -->*/}
-												<div className="col-lg-6 mb-4">
+																		{/*<!-- Last Movie in DB -->*/}
+																		<div className="col-lg-6 mb-4">
 							<div className="card shadow mb-4">
 								<div className="card-header py-3">
 									<h5 className="m-0 font-weight-bold text-gray-800">Último usuario agregado</h5>
@@ -200,6 +117,9 @@ function ContentRowTop(){
 							</div>
 						</div>
 						{/*<!-- End content row last movie in Data Base -->*/}
+
+
+
 
 												{/*<!-- Genres in DB -->*/}
 												<div className="col-lg-6 mb-4">						
@@ -286,6 +206,89 @@ function ContentRowTop(){
 						</div>
 
 						{/* End Actividades */}
+												{/*<!-- Genres in DB -->*/}
+												<div className="col-lg-6 mb-4">						
+							<div className="card shadow mb-4">
+								<div className="card-header py-3">
+									<h5 className="m-0 font-weight-bold text-gray-800">Categorías actividades</h5>
+								</div>
+								<div className="card-body">
+									<div className="row">
+										<div className="col-lg-6 mb-4">
+											<div className="card bg-dark text-white shadow">
+												<div className="card-body">
+													<Categorias />
+												</div>
+											</div>
+										</div>
+										{/* <div className="col-lg-6 mb-4">
+											<div className="card bg-dark text-white shadow">
+												<div className="card-body">
+													Animación
+												</div>
+											</div>
+										</div>
+										<div className="col-lg-6 mb-4">
+											<div className="card bg-dark text-white shadow">
+												<div className="card-body">
+													Aventura
+												</div>
+											</div>
+										</div>
+										<div className="col-lg-6 mb-4">
+											<div className="card bg-dark text-white shadow">
+												<div className="card-body">
+													Ciencia Ficción
+												</div>
+											</div>
+										</div>
+										<div className="col-lg-6 mb-4">
+											<div className="card bg-dark text-white shadow">
+												<div className="card-body">
+													Comedia
+												</div>
+											</div>
+										</div>
+										<div className="col-lg-6 mb-4">
+											<div className="card bg-dark text-white shadow">
+												<div className="card-body">
+													Documental
+												</div>
+											</div>
+										</div>
+										<div className="col-lg-6 mb-4">
+											<div className="card bg-dark text-white shadow">
+												<div className="card-body">
+													Drama
+												</div>
+											</div>
+										</div>
+										<div className="col-lg-6 mb-4">
+											<div className="card bg-dark text-white shadow">
+												<div className="card-body">
+													Fantasia
+												</div>
+											</div>
+										</div>
+										<div className="col-lg-6 mb-4">
+											<div className="card bg-dark text-white shadow">
+												<div className="card-body">
+													Infantiles
+												</div>
+											</div>
+										</div>
+										<div className="col-lg-6 mb-4">
+											<div className="card bg-dark text-white shadow">
+												<div className="card-body">
+													Musical
+												</div>
+											</div>
+										</div> */}
+
+									</div>
+								</div>
+							</div>
+						</div>
 					</div>
 				</div>
 				{/*<!--End Content Row Top-->*/}
